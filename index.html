@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="CV.jpg">
     <title>CV-Sowbhakian</title>
+
 
     <!-- icons links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -32,32 +34,124 @@
 
 <body>
 
+    <section id="home">
+        <header>
+            <div id="NavBarSec" class="whole-header float-left col-lg-3 col-md-3">
+                <div class="container">
+                    <div class="user">
+                        <!-- <img src="me.jpg" alt=""> -->
+                        <h3 class="name">Sowbhakian E S</h3>
+                        <p>B.E Computer Scienc, 3rd Year</p>
+                        <p>Kongu Engineering College, Erode</p>
+                    </div>
 
-    <header>
-        <div class="whole-header float-left col-lg-3 col-md-3 ">
-            <div class="user">
-                <!-- <img src="me.jpg" alt=""> -->
-                <h3 class="name">Sowbhakian E S</h3>
-                <p>B.E Computer Scienc, 3rd Year</p>
-                <p>Kongu Engineering College, Erode</p>
+                    <nav class="navbar ">
+                        <ul class="row">
+                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText" href="#">home</a></li>
+                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#">about</a></li>
+                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#">Skills  </a></li>
+                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#">portfolio</a></li>
+                            <li class="liClsNavBar col-lg-11 border border-dark navbarBottom"><a class="navbarText " href="#bottom">contact</a></li>
+                            <!--Zoom effect-->
+                        </ul>
+                    </nav>
+                </div>
             </div>
+        </header>
+    </section>
 
-            <nav class="navbar ">
-                <ul class="row">
-                    <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText" href="#">home</a></li>
-                    <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#">about</a></li>
-                    <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#">Skills  </a></li>
-                    <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#">portfolio</a></li>
-                    <li class="liClsNavBar col-lg-11 border border-dark navbarBottom"><a class="navbarText " href="#contact">contact</a></li>
-                    <!--Zoom effect-->
-                </ul>
-            </nav>
+    <!-- MenuBar -->
+    <div id="Toggler" class="sticky-top upDiv text-right">
+        <a href="#title-section">
+            <i class="fas fa-2x fa-bars fa-1x text-warning BurgerIcon" type="button" data-toggle="modal" data-target="#signin-Modal"></i>
+        </a>
+    </div>
+
+    <!-- Context Body -->
+    <div class="row container-fluid">
+
+        <div class="col-lg-3">
         </div>
-    </header>
 
-    <!-- jquery  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+        <section class="home col-lg-6" id="home">
+            <h3>HI THERE !</h3>
+            <h1>I'M <span>Sowbhkian E S</span></h1>
+            <p>To be committed and ecient in my work and to enhancethe growth of the organization by improving and applying my competency at my work.
+            </p>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <footer>
+                <div class="text-center" id="bottom">
+                    <p>
+                        <i class="far fa-copyright"></i> Sowbhakian E S
+                    </p>
+                </div>
+            </footer>
+        </section>
+
+    </div>
+
+
+    <article>
+        <div class="modal fade" id="signin-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <!-- Close -->
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <!-- Context -->
+                    <div class="modal-body">
+                        <div class="container wholeModel">
+                            <div class="userModel text-center">
+                                <h3>Sowbhakian E S</h3>
+                                <p>B.E Computer Scienc, 3rd Year</p>
+                                <p>Kongu Engineering College, Erode</p>
+                            </div>
+
+                            <div class="container ModelItems">
+                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel gra-img" onclick="jumpto('home')">Home</p>
+                            </div>
+                            <div class="container ModelItems">
+                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel gra-img" onclick="jumpto('bottom   ')">About</p>
+                            </div>
+                            <div class="container ModelItems">
+                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel gra-img" onclick="jumpto('bottom')">Skills</p>
+                            </div>
+                            <div class="container ModelItems">
+                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel gra-img" onclick="jumpto('bottom')">Portfolio</p>
+                            </div>
+                            <div class="container ModelItems">
+                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel gra-img" onclick="jumpto('bottom')">Contact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </article>
+
+
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <script>
+        function jumpto(anchor) {
+            window.location.href = "#" + anchor;
+        }
+    </script>
 </body>
 
 </html>
