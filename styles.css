@@ -1,0 +1,70 @@
+li {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.whole-header {
+    color: aliceblue;
+    background-color: rgb(48, 48, 48);
+    position: fixed;
+    z-index: 1;
+    /* position: relative; */
+    text-align: center;
+    background-image: linear-gradient(to left top, #00b75f, #00b585, #00b1a3, #00abb6, #00a3be, #0095bd, #0086ba, #0076b4, #005ca6, #004195, #002681, #000268);
+}
+
+.navbarText {
+    color: #000268;
+    padding: 10% 15%;
+}
+
+.navbar {
+    margin-top: 5%;
+    text-align: left;
+}
+
+.liClsNavBar {
+    text-align: center;
+    padding: 8% 5%;
+    margin: 5% 0;
+    /* background-color: #000268; */
+    border-bottom-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    cursor: pointer;
+}
+
+a {
+    font-size: large;
+    font-family: 'Bree Serif';
+}
+
+a:hover {
+    color: yellow;
+}
+
+.liClsNavBar:hover {
+    box-shadow: 5px 2px 20px whitesmoke;
+}
+
+.navbarBottom {
+    margin-bottom: 50%;
+}
+
+.user {
+    text-align: center;
+    margin-right: 15%;
+    font-family: 'Secular One';
+}
+
+.name {
+    margin-top: 15%;
+}
+
+.gra-img {
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
