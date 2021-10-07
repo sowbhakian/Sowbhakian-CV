@@ -17,7 +17,7 @@ a:hover {
 }
 
 .navbarText {
-    color: #000268;
+    color: #000000;
     padding: 10% 15%;
 }
 
@@ -133,9 +133,105 @@ a:hover {
     background-image: linear-gradient(to left top, #00b75f, #00b585, #00b1a3, #00abb6, #00a3be, #0095bd, #0086ba, #0076b4, #005ca6, #004195, #002681, #000268);
 }
 
-.ModelItems p {
+.navbarTextModel {
     font-weight: bolder;
     font-size: large;
-    color: #ffe5b5;
+    color: wheat;
     text-align: center;
+    font-family: 'Bree Serif';
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+
+/* Image Home */
+
+.avatar-user {
+    border-radius: 10rem !important;
+    box-shadow: 0px 5px 10px 3px #000000;
+}
+
+#home,
+.wholeBody {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+
+.homeName {
+    font-family: 'Acme';
+    color: darkblue;
+    margin: 3% 0;
+}
+
+.home-para {
+    font-family: 'Kanit';
+    font-size: larger;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.homeFullCont {
+    padding: 2% 5%;
+}
+
+@media screen and (max-width: 320px) {
+    .homeFullCont {
+        padding: 2% 1%;
+    }
+}
+
+
+/* about */
+
+#about {
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+
+.headingTemp {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #f9ca24;
+}
+
+span {
+    color: whitesmoke;
+}
+
+.abtInfos {
+    color: #f9ca24;
+    font-size: 1.5rem;
+    padding: 1.5% 0;
+    padding-left: 7%;
+}
+
+.abtTop {
+    margin-top: 10%;
+}
+
+.Abtlinks {
+    background-color: #f9ca24;
+    padding: 5% 2%;
+}
+
+.infoLinksDiv {
+    text-align: center;
+    padding-right: 15%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.infoLinksDiv a {
+    color: #000000;
+    font-size: x-large;
+}
+
+.dowloadCV {
+    padding: 7% 30%;
+    margin-bottom: 4%;
 }
