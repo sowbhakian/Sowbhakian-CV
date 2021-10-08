@@ -187,7 +187,8 @@ a:hover {
 
 /* about */
 
-#about {
+#about,
+#project {
     background-color: rgb(0, 0, 0);
     background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
 }
@@ -208,6 +209,7 @@ span {
     font-size: 1.5rem;
     padding: 1.5% 0;
     padding-left: 7%;
+    font-family: 'Bree Serif';
 }
 
 .abtTop {
@@ -234,4 +236,109 @@ span {
 .dowloadCV {
     padding: 7% 30%;
     margin-bottom: 4%;
+}
+
+
+/* Qualification */
+
+.QuaHead {
+    color: darkblue;
+}
+
+.card {
+    font-family: 'Bree Serif';
+    color: #000268;
+    background: transparent;
+    box-shadow: 5px 2px 10px rgb(49, 49, 49);
+}
+
+.card:hover {
+    box-shadow: 5px 2px 20px rgb(49, 49, 49);
+}
+
+.cardWhole {
+    text-align: center;
+    padding: 3% 3%;
+}
+
+.cardHeader {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-top: 2%;
+}
+
+.cardBody {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.CardIcons {
+    background-color: white;
+    color: darkblue;
+    padding: 3% 3%;
+    border-radius: 1rem;
+    font-size: larger;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
+}
+
+.far {
+    color: darkblue;
+}
+
+.cardText {
+    color: #000268;
+    margin-left: 5%;
+}
+
+.cardList {
+    margin: 5% 0;
+}
+
+.skillEnd {
+    margin-bottom: 5%;
+}
+
+
+/* Projects */
+
+.projectsWhole {
+    color: #f9ca24;
+    padding: 3% 5%;
+    font-family: 'Bree Serif';
+}
+
+.projectHover {
+    padding: 5% 5%;
+    padding-left: 10%;
+    font-size: larger;
+}
+
+
+/* contact */
+
+.contact {
+    padding: 3% 15%;
+    padding-bottom: 0;
+}
+
+.contactIcons {
+    margin-right: 5%;
+    padding: 1% 1%;
+    border-radius: 1rem;
+    color: black;
+    background-color: white;
+}
+
+.contactIcons:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.SowbiName {
+    font-family: 'Pacifico';
+    color: #000000;
+}
+
+.AllHeading {
+    font-family: 'Arvo';
 }
