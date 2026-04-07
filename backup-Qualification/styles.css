@@ -198,7 +198,7 @@ a:hover {
 /* about */
 
 #about,
-#achievements {
+#project {
     background-color: rgb(0, 0, 0);
     background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
 }
@@ -312,7 +312,7 @@ span {
 /* Projects */
 
 .projectsWhole {
-    color: #000268;
+    color: #f9ca24;
     padding: 3% 5%;
     font-family: 'Bree Serif';
 }
@@ -321,7 +321,6 @@ span {
     padding: 5% 5%;
     padding-left: 10%;
     font-size: larger;
-    color: #000268;
 }
 
 
