@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,648 +6,374 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" sizes="32x32" href="CV.jpg">
-    <title>Sowbhakian CV</title>
+    <title>Sowbhakian E S | Java Backend Developer</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- icons links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-
-    <!-- google-font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <!-- google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <!-- bootstrap links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
 
-
-    <!-- Animation -->
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="wholeBody">
+<body>
 
-    <!-- NavBAr -->
-    <section>
-        <header>
-            <div id="NavBarSec" class="whole-header float-left col-lg-3 col-md-3">
-                <div class="container">
-                    <div class="user">
-                        <!-- <img src="me.jpg" alt=""> -->
-                        <h3 class="name">Sowbhakian E S</h3>
-                        <p>B.E Computer Science, 4rd Year</p>
-                        <p>Kongu Engineering College, Erode</p>
-                    </div>
-
-                    <nav class="navbar ">
-                        <ul class="row">
-                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText" href="#">Home</a></li>
-                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#about">About</a></li>
-                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#skills">Skills  </a></li>
-                            <li class="liClsNavBar col-lg-11 border border-dark"><a class="navbarText " href="#project">Project</a></li>
-                            <li class="liClsNavBar col-lg-11 border border-dark navbarBottom"><a class="navbarText " href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
+    <!-- ========== SIDEBAR NAV ========== -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-inner">
+            <div class="sidebar-profile">
+                <div class="sidebar-avatar">
+                    <img src="sowbi.jpg" alt="Sowbhakian E S">
                 </div>
+                <h3 class="sidebar-name">Sowbhakian E S</h3>
+                <p class="sidebar-role">Java Backend Developer</p>
+                <p class="sidebar-company">Finastra via Thoughtscrest</p>
             </div>
-        </header>
-    </section>
 
+            <nav class="sidebar-nav">
+                <a href="#home" class="sidebar-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#about" class="sidebar-link"><i class="fas fa-user"></i> About</a>
+                <a href="#skills" class="sidebar-link"><i class="fas fa-code"></i> Skills</a>
+                <a href="#achievements" class="sidebar-link"><i class="fas fa-trophy"></i> Achievements</a>
+                <a href="#projects" class="sidebar-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#contact" class="sidebar-link"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
 
-    <!-- MenuBar Icon -->
-    <div id="Toggler" class="sticky-top upDiv text-right">
-        <a href="#title-section">
-            <i class="fas fa-2x fa-bars fa-1x text-warning BurgerIcon" type="button" data-toggle="modal" data-target="#signin-Modal"></i>
-        </a>
+            <div class="sidebar-social">
+                <a href="https://github.com/sowbhakian" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sowbhakian/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:sowbhakian.shansan@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Nav Toggle -->
+    <button id="mobileToggle" class="mobile-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Offcanvas Nav -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav">
+        <div class="offcanvas-header" style="background: #0a0a2e; color: #f9ca24;">
+            <h5 class="offcanvas-title">Sowbhakian E S</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body mobile-nav-body">
+            <a href="#home" class="mobile-link" data-bs-dismiss="offcanvas"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" class="mobile-link" data-bs-dismiss="offcanvas"><i class="fas fa-user"></i> About</a>
+            <a href="#skills" class="mobile-link" data-bs-dismiss="offcanvas"><i class="fas fa-code"></i> Skills</a>
+            <a href="#achievements" class="mobile-link" data-bs-dismiss="offcanvas"><i class="fas fa-trophy"></i> Achievements</a>
+            <a href="#projects" class="mobile-link" data-bs-dismiss="offcanvas"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="#contact" class="mobile-link" data-bs-dismiss="offcanvas"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
     </div>
 
-    <!-- Context Body -->
-    <div class="row container-fluid">
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
 
-        <!-- Home -->
-        <div class="col-lg-3"></div>
-        <section class="home col-lg-9" id="home">
-            <div class=" text-center mt-5 mb-5" data-aos="zoom-in-up" data-aos-duration="1000">
-                <img class="avatar rounded-2 avatar-user imgCls border border-dark border-3" src="sowbi.jpg" width="250" style="height: auto; object-fit: cover;" alt="@sowbhakian">
-            </div>
-
-            <div class="homeFullCont">
-                <div data-aos="zoom-in-up" data-aos="flip-up" data-aos-duration="1500">
-                    <h3 class="text-center">Welcome</h3>
-                    <h1 class="homeName text-center">Sowbhakian E S</h1>
+        <!-- ===== HOME / HERO ===== -->
+        <section id="home" class="hero-section">
+            <div class="hero-inner" data-aos="fade-up" data-aos-duration="1000">
+                <img class="hero-avatar" src="sowbi.jpg" alt="Sowbhakian E S">
+                <p class="hero-greeting">Hello, I am</p>
+                <h1 class="hero-name">Sowbhakian E S</h1>
+                <div class="hero-tagline">
+                    <span class="tagline-icon"><i class="fab fa-java"></i></span>
+                    <span>Java Backend Developer</span>
+                    <span class="tagline-divider">|</span>
+                    <span class="tagline-icon"><i class="fas fa-university"></i></span>
+                    <span>FinTech &amp; Core Banking</span>
                 </div>
-                <p class="home-para text-left">Software Engineer at Finastra with 3+ years of experience in core banking and FinTech. Specialized in Java, Spring Boot, REST API, SQL, and Backend Development with expertise in Fusion Essence. Proficient across multiple banking modules including CASA, Lending lifecycles, Collateral, and Commitments. Strong problem-solver with proven ability to deliver high-quality solutions under tight deadlines while fostering effective team collaboration.</p>
+                <p class="hero-summary">Software Engineer at Finastra via Thoughtscrest with 3+ years of experience in core banking and FinTech. Specialized in Java, Spring Boot, REST API, SQL, and Backend Development with expertise in Fusion Essence. Proficient across multiple banking modules including CASA, Lending lifecycles, Collateral, and Commitments.</p>
+                <div class="hero-cta">
+                    <a href="Sowbhakian E S.pdf" target="_blank" class="btn-primary-custom"><i class="fas fa-download"></i> Download Resume</a>
+                    <a href="#projects" class="btn-outline-custom"><i class="fas fa-briefcase"></i> View Projects</a>
+                </div>
             </div>
         </section>
 
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="section section-dark">
+            <div class="section-container">
+                <h2 class="section-title" data-aos="fade-up"><span class="title-accent">About</span> Me</h2>
+                <div class="title-underline" data-aos="fade-up"></div>
 
-
-        <!-- About -->
-        <div class="col-lg-3"></div>
-        <section class="col-lg-9" id="about">
-
-            <h1 class="headingTemp AllHeading">About <span>Me</span></h1>
-            <div class="pl-5 pr-5">
-                <hr class="text-warning border border-1">
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-8" data-aos="fade-up-right" data-aos-duration="1000">
-                    <p class="abtInfos abtTop"><span>Name :</span> Sowbhakian E S</p>
-                    <p class="abtInfos"><span>Qualification :</span> B.E. in Computer Science & Engineering</p>
-                    <p class="abtInfos"><span>Designation :</span> Software Engineer</p>
-                    <p class="abtInfos "><span>Interests:</span> Open Source Contributions, Problem Solving, Continuous Learning</p>
-
-                </div>
-                <div class="col-lg-4" data-aos="fade-up-left" data-aos-duration="1000">
-                    <div class="infoLinksDiv ">
-                        <a href="https://github.com/sowbhakian" target="_blank">
-                            <div class="rounded-start Abtlinks">
-                                GitHub Link
-                            </div>
+                <div class="about-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-info">
+                        <div class="about-item">
+                            <span class="about-label">Name</span>
+                            <span class="about-value">Sowbhakian E S</span>
+                        </div>
+                        <div class="about-item">
+                            <span class="about-label">Qualification</span>
+                            <span class="about-value">B.E. in Computer Science &amp; Engineering (2023)</span>
+                        </div>
+                        <div class="about-item">
+                            <span class="about-label">Designation</span>
+                            <span class="about-value">Software Engineer</span>
+                        </div>
+                        <div class="about-item">
+                            <span class="about-label">Experience</span>
+                            <span class="about-value">3+ Years in Backend Development</span>
+                        </div>
+                        <div class="about-item">
+                            <span class="about-label">Interests</span>
+                            <span class="about-value">Problem Solving &amp; Continuous Learning</span>
+                        </div>
+                    </div>
+                    <div class="about-links">
+                        <a href="https://github.com/sowbhakian" target="_blank" class="about-link-card">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/sowbhakian/" target="_blank" class="about-link-card">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="mailto:sowbhakian.shansan@gmail.com" class="about-link-card">
+                            <i class="fas fa-envelope"></i> Email
                         </a>
                     </div>
-                    <div class="infoLinksDiv ">
-                        <a href="https://www.linkedin.com/in/sowbhakian/" target="_blank">
-                            <div class="rounded-start Abtlinks">
-                                LinkedIn
-                            </div>
-                        </a>
-                    </div>
-                    <div class="infoLinksDiv">
-                        <a href="mailto:sowbhakian.shansan@gmail.com" target="_blank">
-                            <div class="rounded-start Abtlinks ">
-                                E - mail
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="dowloadCV text-center">
-                    <a href="Sowbhakian E S.pdf" download>
-                        <button type="button" target="blank" class="btn btn-outline-light btn-block ">View Resume <i class="fas fa-angle-double-right"></i></button>
-                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" class="section section-light">
+            <div class="section-container">
+                <h2 class="section-title section-title-dark" data-aos="fade-up">Qualifications &amp; <span class="title-accent-dark">Skills</span></h2>
+                <div class="title-underline title-underline-dark" data-aos="fade-up"></div>
 
-        <!-- Skills -->
-        <div class="col-lg-3"></div>
-        <section class="col-lg-9" id="skills">
-
-            <h1 class="headingTemp">
-
-                <h1 class=" text-center AllHeading"> <span class="QuaHead">Qualification and Skills</span></h1>
-                <div class="pl-5 pr-5">
-                    <hr class="text-dark border border-1">
+                <!-- Education -->
+                <div class="education-row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-card">
+                        <div class="edu-card-header"><i class="fas fa-graduation-cap"></i> School Education</div>
+                        <div class="edu-card-body">
+                            <div class="edu-split">
+                                <div class="edu-item">
+                                    <h6>SSLC (2017)</h6>
+                                    <p><a href="http://srvexcel.org/" target="_blank">SRV Excel</a></p>
+                                    <span class="edu-score"><i class="fas fa-award"></i> 90%</span>
+                                </div>
+                                <div class="edu-item">
+                                    <h6>HSC (2019)</h6>
+                                    <p><a href="http://srkschool.edu.in/" target="_blank">SRK School</a></p>
+                                    <span class="edu-score"><i class="fas fa-award"></i> 73%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-card-header"><i class="fas fa-university"></i> College Education</div>
+                        <div class="edu-card-body">
+                            <h6>B.E. Computer Science &amp; Engineering (2023)</h6>
+                            <p><a href="https://kongu.ac.in/" target="_blank">Kongu Engineering College</a></p>
+                            <span class="edu-score"><i class="fas fa-award"></i> CGPA: 8.54 with Distinction</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row">
-
-                    <!-- School Education - SSLC & HSC Combined -->
-                    <div class="col-lg-6 col-md-6 cardWhole mb-3" data-aos="zoom-out-right" data-aos-duration="1000">
-                        <div class="card h-100">
-                            <div class="cardHeader">School Education
-                                <hr>
-                            </div>
-
-                            <div class="cardBody">
-                                <div class="row">
-                                    <!-- SSLC -->
-                                    <div class="col-lg-6 col-md-6 border-right pr-3" style="margin-top: 10px; margin-bottom: 25px;">
-                                        <h6 class="text-dark mb-2"><strong>SSLC (2017)</strong></h6>
-                                        <div class="cardList" style="margin-top: 25px; margin-bottom: 25px;">
-                                            <a href="http://srvexcel.org/" target="_blank">
-                                                <i class="fas fa-school CardIcons"></i> <span class="cardText"> SRV Excel </span>
-                                            </a>
-                                        </div>
-                                        <div class="cardList">
-                                            <i class="fas fa-award CardIcons "></i> <span class="cardText"> 90% </span>
-                                        </div>
-                                    </div>
-
-                                    <!-- HSC -->
-                                    <div class="col-lg-6 col-md-6 pl-3"  style="margin-top: 10px; margin-bottom: 25px;">
-                                        <h6 class="text-dark mb-2"><strong>HSC (2019)</strong></h6>
-                                        <div class="cardList" style="margin-top: 25px; margin-bottom: 25px;">
-                                            <a href="http://srkschool.edu.in/" target="_blank">
-                                                <i class="fas fa-school CardIcons"></i> <span class="cardText"> SRK School </span>
-                                            </a>
-                                        </div>
-                                        <div class="cardList">
-                                            <i class="fas fa-award CardIcons "></i> <span class="cardText"> 73% </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Technical Skills -->
+                <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category">
+                        <h5 class="skill-category-title"><i class="fab fa-java"></i> Core Tech Stack</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Core Java</span>
+                            <span class="skill-tag">OOPs</span>
+                            <span class="skill-tag">Multithreading</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Hibernate</span>
+                            <span class="skill-tag">Batch Processing</span>
                         </div>
                     </div>
-
-                    <!-- College -->
-                    <div class="col-lg-6 col-md-6 cardWhole mb-3" data-aos="zoom-out-left" data-aos-duration="1000">
-                        <div class="card h-100">
-
-                            <div class="cardHeader"> College Education
-                                <hr>
-                            </div>
-
-                            <div class="cardBody">
-                                <h6 class="text-dark mb-2"><strong>B.E. Computer Science & Engineering (2023)</strong></h6>
-                                <div class="cardList">
-                                    <a href="https://kongu.ac.in/" target="_blank">
-                                        <i class="fas fa-university CardIcons"></i> <span class="cardText"> Kongu Engineering College </span>
-                                    </a>
-                                </div>
-
-                                <div class="cardList">
-                                    <i class="fas fa-award CardIcons"></i> <span class="cardText"> CGPA: 8.54 with Distinction </span>
-                                </div>
-                            </div>
+                    <div class="skill-category">
+                        <h5 class="skill-category-title"><i class="fas fa-exchange-alt"></i> APIs &amp; Web Services</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">SOAP APIs</span>
+                            <span class="skill-tag">JSON / XML</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">SOAP UI</span>
+                            <span class="skill-tag">Swagger</span>
                         </div>
                     </div>
-
-                    <!--Technical Skills -->
-                    <div class="col-lg-12 col-md-12 cardWhole skillEnd" data-aos="zoom-out-up" data-aos-duration="1000">
-                        <div class="card">
-
-                            <div class="cardHeader">
-                                Technical Skills
-                                <hr>
-                            </div>
-
-                            <div class="cardBody ">
-                                 <div class="row">  
-                                    <!-- Tech Stack -->
-                                    <div class="mb-3 col-lg-4 col-md-4 " style="margin-top: 20px;">
-                                        <h6 class="text-dark mb-2"><strong><i class="fas fa-code"></i> Tech Stack</strong></h6>
-                                        <div class="row">
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fab fa-java CardIcons"></i> <span class="cardText">Core Java</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-cube CardIcons"></i> <span class="cardText">OOPs</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-tasks CardIcons"></i> <span class="cardText">Multithreading</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-leaf CardIcons"></i> <span class="cardText">Spring Boot</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-database CardIcons"></i> <span class="cardText">Hibernate</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-layer-group CardIcons"></i> <span class="cardText">Batch Processing</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Web Services & APIs -->
-                                    <div class="mb-3 col-lg-4 col-md-4 " style="margin-top: 20px;">
-                                        <h6 class="text-dark mb-2"><strong><i class="fas fa-network-wired"></i> Web Services & APIs</strong></h6>
-                                        <div class="row">
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-exchange-alt CardIcons"></i> <span class="cardText">RESTful APIs</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-soap CardIcons"></i> <span class="cardText">SOAP APIs</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-file-code CardIcons"></i> <span class="cardText">JSON / XML</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-paper-plane CardIcons"></i> <span class="cardText">Postman</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-vial CardIcons"></i> <span class="cardText">SOAP UI</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-book CardIcons"></i> <span class="cardText">Swagger</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Databases -->
-                                    <div class="mb-3 col-lg-4 col-md-4 "  style="margin-top: 20px;">
-                                        <h6 class="text-dark mb-2"><strong><i class="fas fa-database"></i> Databases</strong></h6>
-                                        <div class="row">
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-server CardIcons"></i> <span class="cardText">SQL (Oracle/DB2)</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-code-branch CardIcons"></i> <span class="cardText">PL/SQL</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-cogs CardIcons"></i> <span class="cardText">Stored Procedures</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-bolt CardIcons"></i> <span class="cardText">Triggers</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-link CardIcons"></i> <span class="cardText">Joins & DDL</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Tools & Platforms -->
-                                    <div class="mb-3 col-lg-4 col-md-4" style="margin-top: 20px;">
-                                        <h6 class="text-dark mb-2"><strong><i class="fas fa-tools"></i> Tools & Platforms</strong></h6>
-                                        <div class="row">
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fab fa-git-alt CardIcons"></i> <span class="cardText">Git / GitHub</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-terminal CardIcons"></i> <span class="cardText">Git Bash</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-laptop-code CardIcons"></i> <span class="cardText">Eclipse</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-file-export CardIcons"></i> <span class="cardText">WinSCP</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-terminal CardIcons"></i> <span class="cardText">PuTTY</span>
-                                            </div>
-                                            <div class="cardList col-lg-12 col-md-12" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-project-diagram CardIcons"></i> <span class="cardText">Microflow / ETL</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Domain & Other Skills -->
-                                    <div class="mb-2 col-lg-8 col-md-8"  style="margin-top: 20px;">
-                                        
-                                        <h6 class="text-dark mb-2"><strong><i class="fas fa-briefcase"></i> Domain & Other Skills</strong></h6>
-                                        <div class="row">
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-university CardIcons"></i> <span class="cardText">Core Banking System</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-cube CardIcons"></i> <span class="cardText">Fusion Essence</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-box CardIcons"></i> <span class="cardText">Maven / Gradle</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-wallet CardIcons"></i> <span class="cardText">CASA</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-hand-holding-usd CardIcons"></i> <span class="cardText">Lending Life Cycle</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-mosque CardIcons"></i> <span class="cardText">Islamic Banking</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-bezier-curve CardIcons"></i> <span class="cardText">System Integration</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-check-circle CardIcons"></i> <span class="cardText">Unit Testing</span>
-                                            </div>
-                                            <div class="cardList col-lg-6 col-md-6" style="margin-top: 0px; margin-bottom: 0px;">
-                                                <i class="fas fa-sync-alt CardIcons"></i> <span class="cardText">Agile Methodologies</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
+                    <div class="skill-category">
+                        <h5 class="skill-category-title"><i class="fas fa-database"></i> Databases</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL (Oracle/DB2)</span>
+                            <span class="skill-tag">PL/SQL</span>
+                            <span class="skill-tag">Stored Procedures</span>
+                            <span class="skill-tag">Triggers</span>
+                            <span class="skill-tag">Joins &amp; DDL</span>
                         </div>
                     </div>
-
-                </div>
-
-        </section>
-
-
-        <!-- Key Achievements -->
-        <div class="col-lg-3"></div>
-        <section class="col-lg-9" id="achievements">
-
-            <h1 class="headingTemp AllHeading">Key <span>Achievements</span></h1>
-            <div class="pl-5 pr-5">
-                <hr class="text-warning border border-1">
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1000">
-                    <p class="abtInfos abtTop" style="margin-top: 40px; margin-bottom: 40px;"><i class="fas fa-check-circle text-white" ></i> Led multiple onsite technical workshops and hands-on training sessions for bank IT teams during Fusion Essence implementation, enabling faster system adoption and reducing post–go-live support dependency.</p>
-                    <p class="abtInfos" style="margin-top: 40px; margin-bottom: 80px;"><i class="fas fa-check-circle text-white"></i> Collaborated onsite in Zimbabwe for four months to implement the Fusion Essence Core Banking System for ZB Bank, providing end-to-end go-live and post–go-live support.</p>
+                    <div class="skill-category">
+                        <h5 class="skill-category-title"><i class="fas fa-tools"></i> Tools &amp; Platforms</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git / GitHub</span>
+                            <span class="skill-tag">Git Bash</span>
+                            <span class="skill-tag">Eclipse</span>
+                            <span class="skill-tag">WinSCP</span>
+                            <span class="skill-tag">PuTTY</span>
+                            <span class="skill-tag">Microflow / ETL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category skill-category-wide">
+                        <h5 class="skill-category-title"><i class="fas fa-university"></i> Domain &amp; Methodologies</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag tag-domain">Core Banking</span>
+                            <span class="skill-tag tag-domain">Fusion Essence</span>
+                            <span class="skill-tag tag-domain">Maven / Gradle</span>
+                            <span class="skill-tag tag-domain">CASA</span>
+                            <span class="skill-tag tag-domain">Lending Life Cycle</span>
+                            <span class="skill-tag tag-domain">Islamic Banking</span>
+                            <span class="skill-tag tag-domain">System Integration</span>
+                            <span class="skill-tag tag-domain">Unit Testing</span>
+                            <span class="skill-tag tag-domain">Agile</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Project -->
-        <div class="col-lg-3"></div>
-        <section class="col-lg-9" id="project">
-
-            <h1 class="headingTemp AllHeading" style="color: black;">Projects Experience</h1>
-            <div class="pl-5 pr-5">
-                <hr class="text-dark border border-1">
-            </div>
-
-            <!-- Project-1 -->
-            <div class="projectsWhole">
-                <p>1</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> Awash Customization</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> Awash International Bank</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> Addis Ababa, Ethiopia</p>
-                        </div>
+        <!-- ===== KEY ACHIEVEMENTS ===== -->
+        <section id="achievements" class="section section-achievements">
+            <div class="section-container">
+                <h2 class="section-title" data-aos="fade-up">Key <span class="title-accent">Achievements</span></h2>
+                <div class="title-underline" data-aos="fade-up"></div>
+                <div class="achievements-list" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-item">
+                        <div class="achievement-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <p>Led multiple onsite technical workshops and hands-on training sessions for bank IT teams during Fusion Essence implementation, enabling faster system adoption and reducing post-go-live support dependency.</p>
                     </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">Enhanced existing customization (Green Pin Mapping) by introducing a new notification type as a dropdown in the customized screen to support the CRED operation. Additionally, updated the Extract batch to accommodate the newly added dropdown and ensure its inclusion in the extracts.</p>
+                    <div class="achievement-item">
+                        <div class="achievement-icon"><i class="fas fa-globe-africa"></i></div>
+                        <p>Collaborated onsite in Zimbabwe for four months to implement the Fusion Essence Core Banking System for ZB Bank, providing end-to-end go-live and post-go-live support.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Project-2 -->
-            <div class="projectsWhole">
-                <p>2</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> BDB Customization</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> Banco do Brasil</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> Japan</p>
-                        </div>
-                    </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">The client requested a custom trigger to capture a record of party details that have been amended or updated in the UDF fields. To fulfill this requirement, developed a custom trigger on the ABC table. The custom trigger specifically identifies party-related rows and transfers the relevant records to the XYZ table.</p>
-                </div>
-            </div>
-
-            <!-- Project-3 -->
-            <div class="projectsWhole">
-                <p>3</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> RCL Development</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> UB Core Team</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> NA</p>
-                        </div>
-                    </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">TCL introduced a new module called Revolving Credit Limit (RCL) in version 5.5X. My contributions to this module include:</p>
-                    <p style="text-align: justify;">• Developed an API to update billing details.</p>
-                    <p style="text-align: justify;">• Created JavaScript for the loan variation screen to dynamically enable or disable fields based on requirements.</p>
-                    <p style="text-align: justify;">• Developed and implemented a new feature called the "Charge Accrual Feature".</p>
-                    <p style="text-align: justify;">• Modified the charge collection process to transition from a real-time collection to an accrual-based process only for the RCL product. This was achieved in the CBS Online and Event charges.</p>
-                    <p style="text-align: justify;">• Updated the "Account Closure" process flow to ensure support for the RCL product.</p>
-                </div>
-            </div>
-
-            <!-- Project-4 -->
-            <div class="projectsWhole">
-                <p>4</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> Lending Core Development</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> UB Lending Core Team</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> NA</p>
-                        </div>
-                    </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">• The client requested the addition of a new charge basis, as the "Loan Repayment Amount," in the UB Charges module. The scheduled charges are to be calculated based on the repayment amount during the direct loan establishment and amendment processes.</p>
-                    <p style="text-align: justify;">• The client requested a new feature to waive a certain amount as a subsidy. In response, developed a new configuration as "Repayment Adjustment Details" in the loan amendment screen and updated the process flow to support CRED operations.</p>
-                </div>
-            </div>
-
-            <!-- Project-5 -->
-            <div class="projectsWhole">
-                <p>5</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> Awash Workshop</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> Awash International Bank</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> Addis Ababa, Ethiopia</p>
-                        </div>
-                    </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">Conducted an in-depth workshop and training session on the Workbench, focusing on the development of new menu processes, batch processes, and exploring the range of features available in Fusion Essence to meet client expectations.</p>
-                </div>
-            </div>
-
-            <!-- Project-6 -->
-            <div class="projectsWhole">
-                <p>6</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> Tonik Customization</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> Tonik Bank</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> Chennai</p>
-                        </div>
-                    </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">The client requested the implementation of a feature to calculate a new EIR (Effective Interest Rate) and MIR (Monthly Interest Rate) for newly established loans, generate a revised schedule with updated interest and amortization amounts, and facilitate the transfer of the amortization amount from the suspense account to the P&L account through a batch process. The following processes were developed to fulfill this requirement:</p>
-                    <p style="text-align: justify;">• Charges Amortization Configuration: A configuration process created to enable charges amortization for loan subproducts.</p>
-                    <p style="text-align: justify;">• EIR/MIR Calculation Process: A batch process designed to generate a new schedule, along with the EIR and MIR, for newly established loans.</p>
-                    <p style="text-align: justify;">• EIR/MIR Recalculation Process: A batch process to recalculate EIR and MIR for loans that have availed the holiday repayment.</p>
-                    <p style="text-align: justify;">• Charge Amortization Process: A batch process was developed to amortize the amortization amount from the suspense account to the P&L account.</p>
-                    <p style="text-align: justify;">• EIR/MIR Enquiry Process: A user-friendly process for enquiring the newly generated schedule, EIR, and MIR has been developed.</p>
-                    <p style="text-align: justify;">• EIR/MIR Enquiry API: An API developed to fetch details of the newly generated schedule, EIR, and MIR.</p>
-                </div>
-            </div>
-
-            <!-- Project-7 -->
-            <div class="projectsWhole">
-                <p>7</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> FIB Customization</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> FIB Frankfurt International Bank</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> Frankfurt, Germany</p>
-                        </div>
-                    </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">Developed three customizations, detailed as follows:</p>
-                    <p style="text-align: justify;">• Party ID Generation: The bank requested the generation of Party IDs in a specific format. This was achieved using the core ID generator, with additional manipulation of the Party ID on the core screen via JavaScript. Additionally, a wrapped API was developed to handle the Party ID customization.</p>
-                    <p style="text-align: justify;">• KFW Refinance: A custom batch process was developed to perform rate changes based on the client's requirements. This batch process automatically reverts to the previous rate after the first interest application date.</p>
-                    <p style="text-align: justify;">• KYT: A new custom adapter has been developed in essence to accommodate the third-party API to validate whether the transaction is compliant or non-compliant, based on the response the custom adapter will reject or approve the transaction in FPM.</p>
-                </div>
-            </div>
-
-            <!-- Project-8 -->
-            <div class="projectsWhole">
-                <p>8</p>
-                <div class="border border-dark projectHover" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <h5 style="color: #000268;"><strong><i class="fas fa-project-diagram"></i> ZB Bank Implementation</strong></h5>
-                    <div class="row mt-3">
-                        <div class="col-lg-6">
-                            <p><strong>Client :</strong> ZB Bank</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p><strong>Location :</strong> Harare, Zimbabwe</p>
-                        </div>
-                    </div>
-                    <p class="mt-2"><strong>Roles & Responsibilities :</strong></p>
-                    <p style="text-align: justify;">To implement the product, identified and addressed gaps between existing business activities and product functionality. Ensured seamless integration with other systems, customized the system to meet the client's specific needs, and provided support to resolve issues encountered during various testing cycles and the product's go-live phase.</p>
-                </div>
-            </div>
-
-
-
         </section>
 
+        <!-- ===== PROJECTS ===== -->
+        <section id="projects" class="section section-light">
+            <div class="section-container">
+                <h2 class="section-title section-title-dark" data-aos="fade-up">Projects <span class="title-accent-dark">Experience</span></h2>
+                <div class="title-underline title-underline-dark" data-aos="fade-up"></div>
 
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header"><span class="project-number">01</span><div><h4 class="project-title">Awash Customization &amp; Workshop</h4><span class="project-client"><i class="fas fa-building"></i> Awash International Bank</span></div></div>
+                    <div class="project-body">
+                        <ul class="project-list">
+                            <li>Enhanced existing customization (Green Pin Mapping) by introducing a new notification type as a dropdown in the customized screen to support the CRED operation. Additionally, updated the Extract batch to accommodate the newly added dropdown and ensure its inclusion in the extracts.</li>
+                            <li>Conducted an in-depth workshop and training session on the Workbench, focusing on development of new menu processes, batch processes, and exploring features available in Fusion Essence to meet client expectations.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <!-- footer -->
-        <div class="col-lg-3"></div>
-        <footer class="col-lg-9" id="contact">
-            <div class="text-center">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header"><span class="project-number">02</span><div><h4 class="project-title">BDB Customization</h4><span class="project-client"><i class="fas fa-building"></i> Banco do Brasil</span></div></div>
+                    <div class="project-body"><p>The client requested a custom trigger to capture a record of party details that have been amended or updated in the UDF fields. Developed a custom trigger on the ABC table that specifically identifies party-related rows and transfers the relevant records to the XYZ table.</p></div>
+                </div>
 
-                <h5 class="contact">
-                    <a href="https://github.com/sowbhakian" target="_blank">
-                        <i class="fab fa-github-square fa-2x contactIcons"></i>
-                    </a>
-                    <a href="mailto:sowbhakian.shansan@gmail.com" target="_blank">
-                        <i class="fas fa-envelope fa-2x contactIcons"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sowbhakian/" target="_blank">
-                        <i class="fab fa-linkedin fa-2x contactIcons"></i>
-                    </a>
-                    <a href="https://www.instagram.com/_._sowbiphillic_._/" target="_blank">
-                        <i class="fab fa-instagram-square fa-2x contactIcons"></i>
-                    </a>
-                </h5>
-                <span class="SowbiName">  <i class="far fa-copyright"></i>  Sowbhakian E S</span>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header"><span class="project-number">03</span><div><h4 class="project-title">RCL Development</h4><span class="project-client"><i class="fas fa-building"></i> UB Core Team</span></div></div>
+                    <div class="project-body">
+                        <p>TCL introduced a new module called Revolving Credit Limit (RCL) in version 5.5X. Contributions include:</p>
+                        <ul class="project-list">
+                            <li>Developed an API to update billing details.</li>
+                            <li>Created JavaScript for the loan variation screen to dynamically enable or disable fields.</li>
+                            <li>Developed and implemented the "Charge Accrual Feature".</li>
+                            <li>Modified charge collection from real-time to accrual-based for RCL product.</li>
+                            <li>Updated the "Account Closure" process flow for RCL support.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header"><span class="project-number">04</span><div><h4 class="project-title">Lending Core Development</h4><span class="project-client"><i class="fas fa-building"></i> UB Lending Core Team</span></div></div>
+                    <div class="project-body">
+                        <ul class="project-list">
+                            <li>Added a new charge basis "Loan Repayment Amount" in UB Charges module for scheduled charges during loan establishment and amendment.</li>
+                            <li>Developed "Repayment Adjustment Details" configuration in loan amendment screen with CRED operations support for subsidy waivers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header"><span class="project-number">05</span><div><h4 class="project-title">Tonik Customization</h4><span class="project-client"><i class="fas fa-building"></i> Tonik Bank</span></div></div>
+                    <div class="project-body">
+                        <p>Implemented EIR/MIR calculation for newly established loans with revised schedules and amortization transfers:</p>
+                        <ul class="project-list">
+                            <li><strong>Charges Amortization Configuration</strong> — Enable charges amortization for loan subproducts.</li>
+                            <li><strong>EIR/MIR Calculation Process</strong> — Batch process to generate new schedule with EIR and MIR.</li>
+                            <li><strong>EIR/MIR Recalculation Process</strong> — Recalculate for loans with holiday repayment.</li>
+                            <li><strong>Charge Amortization Process</strong> — Amortize from suspense to P&amp;L account.</li>
+                            <li><strong>EIR/MIR Enquiry Process &amp; API</strong> — User-friendly enquiry and API for schedule details.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header"><span class="project-number">06</span><div><h4 class="project-title">FIB Customization</h4><span class="project-client"><i class="fas fa-building"></i> FIB Frankfurt International Bank</span></div></div>
+                    <div class="project-body">
+                        <p>Developed three customizations:</p>
+                        <ul class="project-list">
+                            <li><strong>Party ID Generation</strong> — Custom ID format using core ID generator with JavaScript manipulation and wrapped API.</li>
+                            <li><strong>KFW Refinance</strong> — Batch process for automatic rate changes that reverts after first interest application date.</li>
+                            <li><strong>KYT</strong> — Custom adapter for third-party compliance validation API, auto-rejecting or approving transactions in FPM.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header"><span class="project-number">07</span><div><h4 class="project-title">ZB Bank Implementation</h4><span class="project-client"><i class="fas fa-building"></i> ZB Bank</span></div></div>
+                    <div class="project-body"><p>Implemented the product by identifying and addressing gaps between business activities and product functionality. Ensured seamless integration, customized the system to client needs, and provided support during testing cycles and go-live phase.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer id="contact" class="footer-section">
+            <div class="section-container">
+                <div class="footer-content">
+                    <h3>Let's Connect</h3>
+                    <div class="footer-links">
+                        <a href="https://github.com/sowbhakian" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="mailto:sowbhakian.shansan@gmail.com"><i class="fas fa-envelope fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/sowbhakian/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="https://www.instagram.com/_._sowbiphillic_._/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                    <p class="footer-copy">&copy; 2026 Sowbhakian E S</p>
+                </div>
             </div>
         </footer>
-    </div>
 
+    </main>
 
-    <article>
-        <div class="modal fade" id="signin-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <!-- Close -->
-                    <div class="modal-header border-bottom-0">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <!-- Context -->
-                    <div class="modal-body">
-                        <div class="container wholeModel">
-                            <div class="userModel text-center">
-                                <h3>Sowbhakian E S</h3>
-                                <p>B.E Computer Scienc, 3rd Year</p>
-                                <p>Kongu Engineering College, Erode</p>
-                            </div>
-
-                            <div class="container ModelItems">
-                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel " onclick="jumpto('home')">Home</p>
-                            </div>
-                            <div class="container ModelItems">
-                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel " onclick="jumpto('about')">About</p>
-                            </div>
-                            <div class="container ModelItems">
-                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel " onclick="jumpto('skills')">Skills</p>
-                            </div>
-                            <div class="container ModelItems">
-                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel " onclick="jumpto('project')">Project</p>
-                            </div>
-                            <div class="container ModelItems">
-                                <p data-dismiss="modal" aria-label="Close" class="border border-dark navbarTextModel " onclick="jumpto('contact')">Contact</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </article>
-
-
-    <!-- jQuery -->
-    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-    <!-- Popper JS -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
-    <!-- Bootstrap JS -->
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
     <script>
-        AOS.init();
-
-        function jumpto(anchor) {
-            window.location.href = "#" + anchor;
-        }
+        AOS.init({ once: true });
+        const sections = document.querySelectorAll('section, footer');
+        const navLinks = document.querySelectorAll('.sidebar-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(sec => {
+                const top = sec.offsetTop - 100;
+                if (scrollY >= top) current = sec.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+            });
+        });
     </script>
 </body>
-
 </html>
