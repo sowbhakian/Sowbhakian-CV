@@ -470,6 +470,14 @@
         window.addEventListener('scroll', () => {
             if (isClicking) return; // Don't interfere with click navigation
             
+            // Check if user has scrolled to bottom
+            const scrolledToBottom = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50;
+            
+            if (scrolledToBottom) {
+                setActiveLink('contact');
+                return;
+            }
+            
             let current = '';
             sections.forEach(sec => {
                 const top = sec.offsetTop - 100;
