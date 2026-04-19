@@ -84,22 +84,43 @@
 
         <!-- ===== HOME / HERO ===== -->
         <section id="home" class="hero-section">
-            <div class="hero-inner" data-aos="fade-up" data-aos-duration="1000">
-                <img class="hero-avatar" src="sowbi.jpg" alt="Sowbhakian E S">
-                <p class="hero-greeting">Hello, I am</p>
-                <h1 class="hero-name">Sowbhakian E S</h1>
-                <div class="hero-tagline">
-                    <span class="tagline-icon"><i class="fab fa-java"></i></span>
-                    <span>Java Backend Developer</span>
-                    <span class="tagline-divider">|</span>
-                    <span class="tagline-icon"><i class="fas fa-university"></i></span>
-                    <span>FinTech &amp; Core Banking</span>
+            <div class="hero-stage">
+
+                <!-- ── Animation layer ── -->
+                <div class="hero-anim-track">
+                    <!-- Cyclist (enters from left, guides photo, then fades) -->
+                    <img class="hero-cyclist" src="cyclist.svg" alt="" aria-hidden="true">
+                    <!-- Guiding line (thin, elegant, retracts) -->
+                    <div class="hero-guideline"></div>
+                    <!-- Profile photo (guided into center position) -->
+                    <div class="hero-photo">
+                        <img src="sowbi.jpg" alt="Sowbhakian E S">
+                    </div>
                 </div>
-                <p class="hero-summary">Software Engineer at Finastra via Thoughtscrest with 3+ years of experience in core banking and FinTech. Specialized in Java, Spring Boot, REST API, SQL, and Backend Development with expertise in Fusion Essence. Proficient across multiple banking modules including CASA, Lending lifecycles, Collateral, and Commitments.</p>
-                <div class="hero-cta">
-                    <a href="Sowbhakian E S.pdf" target="_blank" class="btn-primary-custom"><i class="fas fa-download"></i> Download Resume</a>
-                    <a href="#projects" class="btn-outline-custom"><i class="fas fa-briefcase"></i> View Projects</a>
+
+                <!-- ── Text layer (appears after photo settles) ── -->
+                <div class="hero-text-group">
+                    <p class="hero-text hero-text-greeting">Hello, I'm</p>
+                    <h1 class="hero-text hero-text-name">Sowbhakian E S</h1>
+                    <p class="hero-text hero-text-subtitle">Software Engineer</p>
                 </div>
+
+                <!-- ── Content layer (final fade-in) ── -->
+                <div class="hero-content-reveal">
+                    <div class="hero-tagline">
+                        <span class="tagline-icon"><i class="fab fa-java"></i></span>
+                        <span>Java Backend Developer</span>
+                        <span class="tagline-divider">|</span>
+                        <span class="tagline-icon"><i class="fas fa-university"></i></span>
+                        <span>FinTech &amp; Core Banking</span>
+                    </div>
+                    <p class="hero-summary">Software Engineer at Finastra via Thoughtscrest with 3+ years of experience in core banking and FinTech. Specialized in Java, Spring Boot, REST API, SQL, and Backend Development with expertise in Fusion Essence. Proficient across multiple banking modules including CASA, Lending lifecycles, Collateral, and Commitments.</p>
+                    <div class="hero-cta">
+                        <a href="Sowbhakian E S.pdf" target="_blank" class="btn-primary-custom"><i class="fas fa-download"></i> Download Resume</a>
+                        <a href="#projects" class="btn-outline-custom"><i class="fas fa-briefcase"></i> View Projects</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -270,7 +291,13 @@
                 <div class="title-underline title-underline-dark" data-aos="fade-up"></div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-header"><span class="project-number">01</span><div><h4 class="project-title">Awash Customization &amp; Workshop</h4><span class="project-client"><i class="fas fa-building"></i> Awash International Bank</span></div></div>
+                    <div class="project-header">
+                        <span class="project-number">01</span>
+                        <div>
+                            <h4 class="project-title">Awash Customization &amp; Workshop</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> Awash International Bank</span>
+                        </div>
+                    </div>
                     <div class="project-body">
                         <ul class="project-list">
                             <li>Enhanced existing customization (Green Pin Mapping) by introducing a new notification type as a dropdown in the customized screen to support the CRED operation. Additionally, updated the Extract batch to accommodate the newly added dropdown and ensure its inclusion in the extracts.</li>
@@ -280,12 +307,26 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-header"><span class="project-number">02</span><div><h4 class="project-title">BDB Customization</h4><span class="project-client"><i class="fas fa-building"></i> Banco do Brasil</span></div></div>
-                    <div class="project-body"><p>The client requested a custom trigger to capture a record of party details that have been amended or updated in the UDF fields. Developed a custom trigger on the ABC table that specifically identifies party-related rows and transfers the relevant records to the XYZ table.</p></div>
+                    <div class="project-header">
+                        <span class="project-number">02</span>
+                        <div>
+                            <h4 class="project-title">BDB Customization</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> Banco do Brasil</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>The client requested a custom trigger to capture a record of party details that have been amended or updated in the UDF fields. Developed a custom trigger on the ABC table that specifically identifies party-related rows and transfers the relevant records to the XYZ table.</p>
+                    </div>
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-header"><span class="project-number">03</span><div><h4 class="project-title">RCL Development</h4><span class="project-client"><i class="fas fa-building"></i> UB Core Team</span></div></div>
+                    <div class="project-header">
+                        <span class="project-number">03</span>
+                        <div>
+                            <h4 class="project-title">RCL Development</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> UB Core Team</span>
+                        </div>
+                    </div>
                     <div class="project-body">
                         <p>TCL introduced a new module called Revolving Credit Limit (RCL) in version 5.5X. Contributions include:</p>
                         <ul class="project-list">
@@ -299,7 +340,13 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-header"><span class="project-number">04</span><div><h4 class="project-title">Lending Core Development</h4><span class="project-client"><i class="fas fa-building"></i> UB Lending Core Team</span></div></div>
+                    <div class="project-header">
+                        <span class="project-number">04</span>
+                        <div>
+                            <h4 class="project-title">Lending Core Development</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> UB Lending Core Team</span>
+                        </div>
+                    </div>
                     <div class="project-body">
                         <ul class="project-list">
                             <li>Added a new charge basis "Loan Repayment Amount" in UB Charges module for scheduled charges during loan establishment and amendment.</li>
@@ -309,7 +356,13 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-header"><span class="project-number">05</span><div><h4 class="project-title">Tonik Customization</h4><span class="project-client"><i class="fas fa-building"></i> Tonik Bank</span></div></div>
+                    <div class="project-header">
+                        <span class="project-number">05</span>
+                        <div>
+                            <h4 class="project-title">Tonik Customization</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> Tonik Bank</span>
+                        </div>
+                    </div>
                     <div class="project-body">
                         <p>Implemented EIR/MIR calculation for newly established loans with revised schedules and amortization transfers:</p>
                         <ul class="project-list">
@@ -323,7 +376,13 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-header"><span class="project-number">06</span><div><h4 class="project-title">FIB Customization</h4><span class="project-client"><i class="fas fa-building"></i> FIB Frankfurt International Bank</span></div></div>
+                    <div class="project-header">
+                        <span class="project-number">06</span>
+                        <div>
+                            <h4 class="project-title">FIB Customization</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> FIB Frankfurt International Bank</span>
+                        </div>
+                    </div>
                     <div class="project-body">
                         <p>Developed three customizations:</p>
                         <ul class="project-list">
@@ -335,8 +394,39 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-header"><span class="project-number">07</span><div><h4 class="project-title">ZB Bank Implementation</h4><span class="project-client"><i class="fas fa-building"></i> ZB Bank</span></div></div>
-                    <div class="project-body"><p>Implemented the product by identifying and addressing gaps between business activities and product functionality. Ensured seamless integration, customized the system to client needs, and provided support during testing cycles and go-live phase.</p></div>
+                    <div class="project-header">
+                        <span class="project-number">07</span>
+                        <div>
+                            <h4 class="project-title">ZB Bank Implementation</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> ZB Bank</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Traveled to site location to implement the product, identified and addressed gaps between existing business activities and product functionality. Ensured seamless integration with other systems, customized the system to meet the client's specific needs, and provided support to resolve issues encountered during various testing cycles and the product's go-live phase.</p>
+                        <ul class="project-list">
+                            <li>Gathered client requirements and communicated solution designs, ensuring 100% alignment with business needs.</li>
+                            <li>Identified root causes of issues arising from migrations or builds and corrected data wherever necessary.</li>
+                            <li>Supported the Core Banking system in integrating with third party applications to meet business objectives.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <span class="project-number">08</span>
+                        <div>
+                            <h4 class="project-title">Islamic Banking Product Team</h4>
+                            <span class="project-client"><i class="fas fa-building"></i> UB Core Team</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Successfully forward ported the entire Islamic Banking product from version 5.5.X to the latest 202X release, resolving artifact build issues, addressing version compatibility concerns, and integrating the product with BAW. Additionally, resolved functional issues within the IB product and developed custom processes tailored to specific client requirements.</p>
+                        <ul class="project-list">
+                            <li><strong>Built an automation tool:</strong> Developed an automation tool using ANT and Scriptella to streamline manual processes in the core banking system. Automated tasks included importing abstract products, creating sub-products for IB, configuring IB setups, and provisioning users.</li>
+                            <li>Enhanced the existing post deal "Rate Review" process to support interest rate amendments based on base codes and fixed rate structures, integrating the solution with the core banking system's SOAP API.</li>
+                            <li>Developed new IB products - Floating Murabaha and Manual Ijara and integrated them into the existing process flow to enable the required business functionality.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -363,15 +453,45 @@
         AOS.init({ once: true });
         const sections = document.querySelectorAll('section, footer');
         const navLinks = document.querySelectorAll('.sidebar-link');
+        let isClicking = false;
+        let clickTimeout;
+        
+        // Function to set active link
+        function setActiveLink(targetId) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + targetId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // Handle scroll event
         window.addEventListener('scroll', () => {
+            if (isClicking) return; // Don't interfere with click navigation
+            
             let current = '';
             sections.forEach(sec => {
                 const top = sec.offsetTop - 100;
                 if (scrollY >= top) current = sec.getAttribute('id');
             });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+            if (current) setActiveLink(current);
+        });
+        
+        // Handle click event on sidebar links
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href').substring(1);
+                isClicking = true;
+                setActiveLink(targetId);
+                
+                // Clear any existing timeout
+                if (clickTimeout) clearTimeout(clickTimeout);
+                
+                // Re-enable scroll handler after smooth scroll completes (increased to 1500ms)
+                clickTimeout = setTimeout(() => {
+                    isClicking = false;
+                }, 1500);
             });
         });
     </script>

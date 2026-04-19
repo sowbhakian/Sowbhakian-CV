@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" fill="none">
+  <style>
+    .wh { transform-origin: center; animation: ws .8s linear infinite; }
+    .pd { transform-origin: center; animation: ps 1.2s linear infinite; }
+    @keyframes ws { to { transform: rotate(360deg); } }
+    @keyframes ps { to { transform: rotate(360deg); } }
+  </style>
+
+  <!-- Back wheel -->
+  <g class="wh" style="transform-box:fill-box">
+    <circle cx="48" cy="118" r="22" stroke="#c8b06b" stroke-width="1.8" fill="none"/>
+    <circle cx="48" cy="118" r="1.8" fill="#c8b06b"/>
+    <line x1="48" y1="96" x2="48" y2="140" stroke="#a08e5a" stroke-width=".6"/>
+    <line x1="26" y1="118" x2="70" y2="118" stroke="#a08e5a" stroke-width=".6"/>
+    <line x1="32" y1="102" x2="64" y2="134" stroke="#a08e5a" stroke-width=".6"/>
+    <line x1="64" y1="102" x2="32" y2="134" stroke="#a08e5a" stroke-width=".6"/>
+  </g>
+
+  <!-- Front wheel -->
+  <g class="wh" style="transform-box:fill-box">
+    <circle cx="152" cy="118" r="22" stroke="#c8b06b" stroke-width="1.8" fill="none"/>
+    <circle cx="152" cy="118" r="1.8" fill="#c8b06b"/>
+    <line x1="152" y1="96" x2="152" y2="140" stroke="#a08e5a" stroke-width=".6"/>
+    <line x1="130" y1="118" x2="174" y2="118" stroke="#a08e5a" stroke-width=".6"/>
+    <line x1="136" y1="102" x2="168" y2="134" stroke="#a08e5a" stroke-width=".6"/>
+    <line x1="168" y1="102" x2="136" y2="134" stroke="#a08e5a" stroke-width=".6"/>
+  </g>
+
+  <!-- Frame -->
+  <line x1="48" y1="118" x2="94" y2="118" stroke="#8896ab" stroke-width="2"/>
+  <line x1="94" y1="118" x2="78" y2="76" stroke="#8896ab" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="94" y1="118" x2="132" y2="86" stroke="#8896ab" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="78" y1="76" x2="132" y2="86" stroke="#8896ab" stroke-width="1.8"/>
+  <line x1="48" y1="118" x2="78" y2="76" stroke="#7a8799" stroke-width="1.5"/>
+  <line x1="132" y1="86" x2="152" y2="118" stroke="#8896ab" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Seat -->
+  <line x1="78" y1="76" x2="76" y2="67" stroke="#8896ab" stroke-width="2.2"/>
+  <ellipse cx="74" cy="65" rx="8" ry="2.2" fill="#6b7a8d"/>
+
+  <!-- Handlebar -->
+  <path d="M132 86 L136 76 L144 73" stroke="#8896ab" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Pedal crank -->
+  <g class="pd" style="transform-box:fill-box">
+    <circle cx="94" cy="118" r="2" fill="#6b7a8d"/>
+    <line x1="94" y1="108" x2="94" y2="128" stroke="#6b7a8d" stroke-width="1.8"/>
+    <rect x="88" y="106" width="12" height="3" rx="1.5" fill="#6b7a8d"/>
+    <rect x="88" y="127" width="12" height="3" rx="1.5" fill="#6b7a8d"/>
+  </g>
+
+  <!-- Legs -->
+  <path d="M72 70 L82 94 L90 108" stroke="#4a5568" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M78 70 L90 100 L96 126" stroke="#4a5568" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Shoes -->
+  <ellipse cx="92" cy="109" rx="5.5" ry="2.8" fill="#3d4f63"/>
+  <ellipse cx="98" cy="127" rx="5.5" ry="2.8" fill="#3d4f63"/>
+
+  <!-- Torso (navy blazer) -->
+  <rect x="62" y="36" width="24" height="36" rx="5" fill="#2c4a6e"/>
+  <!-- Lapel line -->
+  <line x1="74" y1="36" x2="74" y2="52" stroke="#234060" stroke-width=".8"/>
+
+  <!-- Bag -->
+  <rect x="54" y="42" width="9" height="20" rx="2.5" fill="#3d4f63"/>
+  <path d="M58 42 L62 35 L68 36" stroke="#5a6d80" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <rect x="55.5" y="46" width="6" height="3" rx="1" fill="#4a5d70"/>
+
+  <!-- Arm -->
+  <path d="M86 44 L108 58 L140 73" stroke="#d4a574" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="142" cy="73" r="2.8" fill="#d4a574"/>
+
+  <!-- Head -->
+  <circle cx="74" cy="20" r="14" fill="#d4a574"/>
+
+  <!-- Hair -->
+  <path d="M60 16 Q58 4 68 0 Q74 -2 80 0 Q90 4 88 16 L88 10 Q86 3 78 0 Q70 -1 64 2 Q58 5 60 12Z" fill="#1a1a2e"/>
+  <!-- Hair texture -->
+  <path d="M66 3 Q72 0 78 2 Q84 0 88 4" stroke="#252540" stroke-width="1" fill="none"/>
+
+  <!-- Glasses -->
+  <rect x="64" y="14" width="9.5" height="8" rx="2" fill="none" stroke="#4a4a5a" stroke-width="1.4"/>
+  <rect x="76" y="14" width="9.5" height="8" rx="2" fill="none" stroke="#4a4a5a" stroke-width="1.4"/>
+  <line x1="73.5" y1="18" x2="76" y2="18" stroke="#4a4a5a" stroke-width="1"/>
+  <!-- Lens glare -->
+  <rect x="66" y="15.5" width="2.5" height="1.5" rx=".75" fill="rgba(255,255,255,0.15)"/>
+  <rect x="78" y="15.5" width="2.5" height="1.5" rx=".75" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Eyes -->
+  <circle cx="68.5" cy="19" r="1.4" fill="#1a1a2e"/>
+  <circle cx="80.5" cy="19" r="1.4" fill="#1a1a2e"/>
+  <circle cx="69" cy="18.5" r=".45" fill="#fff"/>
+  <circle cx="81" cy="18.5" r=".45" fill="#fff"/>
+
+  <!-- Smile -->
+  <path d="M70 24 Q74 27 78 24" stroke="#b8876e" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+  <!-- Ears -->
+  <ellipse cx="60" cy="20" rx="2" ry="3.5" fill="#d4a574"/>
+  <ellipse cx="88" cy="20" rx="2" ry="3.5" fill="#d4a574"/>
+</svg>
