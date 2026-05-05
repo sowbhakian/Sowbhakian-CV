@@ -749,6 +749,33 @@ img {
 /* ====================================
    SKILLS
    ==================================== */
+/* Section Header with Image */
+.section-header-with-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.section-header-icon {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e2e8f0;
+    background: #ffffff;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.section-header-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -846,6 +873,178 @@ img {
     z-index: 1;
 }
 
+/* Professional Flight Journey Overlay - India to Zimbabwe */
+.flight-journey-overlay {
+    position: relative;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.journey-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 3;
+    animation: markerFadeIn 1.5s ease-out;
+}
+
+.marker-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding: 0.7rem 1.5rem;
+    background: rgba(0, 48, 135, 0.3);
+    border: 2px solid rgba(70, 130, 230, 0.6);
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.marker-label::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 8px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(70, 130, 230, 0.5), rgba(249, 202, 36, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.achievement-highlight-item:hover .marker-label::before {
+    opacity: 1;
+}
+
+.marker-dot {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, #f9ca24, #ffd700);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(249, 202, 36, 0.2),
+                0 0 0 6px rgba(249, 202, 36, 0.1),
+                0 0 15px rgba(249, 202, 36, 0.4);
+    transition: all 0.4s ease;
+}
+
+.flight-path-svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.flight-route-line {
+    stroke-dasharray: 6, 10;
+    stroke-linecap: round;
+    opacity: 0.85;
+    transition: opacity 0.4s ease;
+    animation: professionalPathFlow 4s linear infinite;
+}
+
+.flight-plane {
+    transform-origin: center;
+    filter: drop-shadow(0 2px 8px rgba(249, 202, 36, 0.3));
+    transition: filter 0.4s ease;
+    animation: professionalPlaneGlide 6s ease-in-out infinite;
+}
+
+.marker-dot {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, #f9ca24, #ffd700);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(249, 202, 36, 0.2),
+                0 0 0 6px rgba(249, 202, 36, 0.1),
+                0 0 15px rgba(249, 202, 36, 0.4);
+    transition: all 0.4s ease;
+    animation: dotPulse 2.5s ease-in-out infinite;
+}
+
+/* Enhanced effects on International Assignment hover */
+.achievement-highlight-item:hover .flight-route-line {
+    opacity: 1;
+    stroke-width: 2.5;
+}
+
+.achievement-highlight-item:hover .flight-plane {
+    filter: drop-shadow(0 2px 15px rgba(249, 202, 36, 0.7));
+}
+
+.achievement-highlight-item:hover .marker-dot {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 5px rgba(249, 202, 36, 0.3),
+                0 0 0 10px rgba(249, 202, 36, 0.15),
+                0 0 20px rgba(249, 202, 36, 0.5);
+}
+
+.achievement-highlight-item:hover .marker-label {
+    border-color: rgba(70, 130, 230, 0.9);
+    box-shadow: 0 4px 25px rgba(70, 130, 230, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+    background: rgba(0, 48, 135, 0.5);
+}
+
+@keyframes markerFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dotPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 3px rgba(249, 202, 36, 0.2),
+                    0 0 0 6px rgba(249, 202, 36, 0.1),
+                    0 0 15px rgba(249, 202, 36, 0.4);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 5px rgba(249, 202, 36, 0.3),
+                    0 0 0 10px rgba(249, 202, 36, 0.15),
+                    0 0 20px rgba(249, 202, 36, 0.5);
+    }
+}
+
+@keyframes professionalPathFlow {
+    0% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 40; }
+}
+
+@keyframes professionalPlaneGlide {
+    0%, 100% {
+        transform: translate(500, 30) translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translate(500, 30) translateY(-3px) rotate(1deg);
+    }
+    75% {
+        transform: translate(500, 30) translateY(-3px) rotate(-1deg);
+    }
+}
+
 .achievements-list {
     display: flex;
     flex-direction: column;
@@ -854,31 +1053,100 @@ img {
 
 .achievement-item {
     display: flex;
-    gap: 1.2rem;
-    align-items: flex-start;
-    padding: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    padding: 1.8rem;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 10px;
+    border-radius: 12px;
     backdrop-filter: blur(8px);
-    transition: border-color 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .achievement-item:hover {
     border-color: rgba(249, 202, 36, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-header-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.achievement-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .achievement-icon {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(249, 202, 36, 0.15);
-    border-radius: 10px;
+    border-radius: 12px;
     color: #f9ca24;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover .achievement-icon {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(249, 202, 36, 0.3);
+}
+
+.achievement-icon-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.achievement-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.achievement-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.35rem 0.85rem;
+    background: linear-gradient(135deg, #f9ca24, #ffa500);
+    color: #0a0a2e;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(249, 202, 36, 0.3);
+}
+
+.achievement-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.93rem;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.achievement-metric {
+    color: #f9ca24;
+    font-weight: 700;
+    padding: 0.1rem 0.4rem;
+    background: rgba(249, 202, 36, 0.15);
+    border-radius: 4px;
 }
 
 .achievement-item p {
@@ -886,6 +1154,457 @@ img {
     font-size: 0.92rem;
     line-height: 1.8;
     margin: 0;
+}
+
+/* Achievement Tags */
+.achievement-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+}
+
+.achievement-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.4rem 0.85rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.achievement-tag i {
+    font-size: 0.7rem;
+    color: #f9ca24;
+}
+
+.achievement-tag:hover {
+    background: rgba(249, 202, 36, 0.15);
+    border-color: rgba(249, 202, 36, 0.3);
+    color: #ffffff;
+}
+
+/* Impact Metrics */
+.achievement-impact {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid rgba(249, 202, 36, 0.15);
+}
+
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.impact-number {
+    font-family: 'Fira Code', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9ca24;
+    line-height: 1;
+    text-shadow: 0 2px 10px rgba(249, 202, 36, 0.3);
+}
+
+.impact-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.achievement-highlight-item {
+    background: linear-gradient(135deg, rgba(249, 202, 36, 0.08), rgba(255, 255, 255, 0.03));
+    border: 1.5px solid rgba(249, 202, 36, 0.25);
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.achievement-standard {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.achievement-highlight-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(249, 202, 36, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.achievement-highlight-item:hover::before {
+    left: 100%;
+}
+
+.achievement-highlight-item:hover {
+    border-color: rgba(249, 202, 36, 0.5);
+    box-shadow: 0 4px 20px rgba(249, 202, 36, 0.15);
+}
+
+.achievement-icon-primary {
+    background: linear-gradient(135deg, rgba(249, 202, 36, 0.25), rgba(249, 202, 36, 0.15));
+    border: 1px solid rgba(249, 202, 36, 0.3);
+}
+
+.achievement-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-highlight-item .flight-journey-overlay {
+    position: relative;
+    height: 180px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0 1rem;
+}
+
+.achievement-text {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.93rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.achievement-text strong {
+    color: #f9ca24;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ====================================
+   PROFESSIONAL EXPERIENCE TIMELINE
+   ==================================== */
+.section-experience {
+    background: linear-gradient(135deg, #0a0a2e 0%, #000268 50%, #16213e 100%);
+    position: relative;
+    color: #fff;
+    padding: 5rem 2rem;
+}
+
+.section-experience::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0 Q300,50 600,30 T1200,0" fill="none" stroke="rgba(249,202,36,0.05)" stroke-width="2"/></svg>') center/cover no-repeat;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.section-experience .section-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+}
+
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    opacity: 0;
+    animation: timelineFadeIn 0.6s ease forwards;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline Marker */
+.timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(249, 202, 36, 0.5);
+    box-shadow: 0 0 0 4px rgba(249, 202, 36, 0.1);
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s ease;
+}
+
+.timeline-dot-active {
+    background: linear-gradient(135deg, #f9ca24, #ffa500);
+    border-color: #f9ca24;
+    box-shadow: 0 0 0 4px rgba(249, 202, 36, 0.2),
+                0 0 20px rgba(249, 202, 36, 0.4);
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.timeline-dot-start {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.timeline-line {
+    width: 2px;
+    height: 100%;
+    min-height: 80px;
+    background: linear-gradient(180deg, 
+        rgba(249, 202, 36, 0.5) 0%, 
+        rgba(249, 202, 36, 0.2) 50%,
+        rgba(255, 255, 255, 0.1) 100%);
+    margin-top: 0.5rem;
+}
+
+.timeline-start .timeline-line {
+    display: none;
+}
+
+/* Timeline Content */
+.timeline-content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 3px solid rgba(249, 202, 36, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-content:hover {
+    transform: translateX(8px);
+    border-left-color: rgba(249, 202, 36, 0.7);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2),
+                -4px 0 20px rgba(249, 202, 36, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.timeline-current .timeline-content {
+    border-left-color: #f9ca24;
+    background: linear-gradient(135deg, rgba(249, 202, 36, 0.1), rgba(255, 255, 255, 0.05));
+}
+
+/* Timeline Header */
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline-period {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.period-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.period-current {
+    background: linear-gradient(135deg, #f9ca24, #ffa500);
+    color: #0a0a2e;
+    box-shadow: 0 2px 10px rgba(249, 202, 36, 0.4);
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+.period-duration {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.period-dates {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.timeline-company {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.timeline-company i {
+    color: #f9ca24;
+    font-size: 0.85rem;
+}
+
+/* Timeline Role */
+.timeline-role {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.role-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.role-type {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+}
+
+.role-type-contract {
+    background: rgba(70, 130, 230, 0.15);
+    color: #87ceeb;
+    border: 1px solid rgba(70, 130, 230, 0.3);
+}
+
+.role-type-fulltime {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.role-type-internship {
+    background: rgba(155, 89, 182, 0.15);
+    color: #bb86fc;
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.timeline-description {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.93rem;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* Career Summary Stats */
+.career-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(249, 202, 36, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.career-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.career-stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f9ca24;
+    line-height: 1;
+    text-shadow: 0 2px 15px rgba(249, 202, 36, 0.4);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes timelineFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 4px rgba(249, 202, 36, 0.2),
+                    0 0 20px rgba(249, 202, 36, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(249, 202, 36, 0.15),
+                    0 0 30px rgba(249, 202, 36, 0.6);
+    }
+}
+
+@keyframes badgePulse {
+    0%, 100% {
+        box-shadow: 0 2px 10px rgba(249, 202, 36, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(249, 202, 36, 0.6);
+    }
 }
 
 /* ====================================
@@ -1058,6 +1777,11 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .section-header-icon {
+        width: 110px;
+        height: 110px;
+    }
+
     .skill-category-wide {
         grid-column: auto;
     }
@@ -1069,6 +1793,64 @@ img {
 
     .about-label {
         min-width: auto;
+    }
+
+    .flight-journey-overlay {
+        padding: 0 1.5rem;
+        height: 160px;
+    }
+
+    .achievement-highlight-item .flight-journey-overlay {
+        height: 150px;
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .marker-label {
+        font-size: 0.65rem;
+        padding: 0.5rem 0.9rem;
+        letter-spacing: 2px;
+    }
+
+    .marker-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .flight-path-svg {
+        height: 160px;
+    }
+
+    .achievement-highlight-item .flight-path-svg {
+        height: 140px;
+    }
+
+    /* Timeline Responsive */
+    .timeline-item {
+        gap: 1.2rem;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .role-title {
+        font-size: 1.1rem;
+    }
+
+    .career-summary {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
     }
 }
 
@@ -1166,12 +1948,130 @@ img {
     }
 
     .achievement-item {
-        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .achievement-header-row {
+        gap: 1.2rem;
+    }
+
+    .achievement-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .achievement-title {
+        font-size: 1rem;
+    }
+
+    .achievement-description {
+        font-size: 0.9rem;
+    }
+
+    .achievement-impact {
+        gap: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    .impact-number {
+        font-size: 1.7rem;
+    }
+
+    .impact-label {
+        font-size: 0.7rem;
     }
 
     .hero-cta {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Timeline Mobile */
+    .timeline-item {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-dot {
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-line {
+        min-height: 60px;
+    }
+
+    .timeline-content {
+        padding: 1.2rem;
+    }
+
+    .timeline-content:hover {
+        transform: translateX(5px);
+    }
+
+    .role-title {
+        font-size: 1rem;
+    }
+
+    .timeline-description {
+        font-size: 0.88rem;
+    }
+
+    .career-summary {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .career-stat {
+        padding: 0.75rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .flight-journey-overlay {
+        padding: 0 1rem;
+        height: 120px;
+    }
+
+    .achievement-highlight-item .flight-journey-overlay {
+        height: 120px;
+        margin-top: 1.25rem;
+        padding: 0 0.5rem;
+    }
+
+    .achievement-text {
+        font-size: 0.88rem;
+    }
+
+    .journey-marker {
+        gap: 0.5rem;
+    }
+
+    .marker-label {
+        font-size: 0.55rem;
+        padding: 0.4rem 0.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    .marker-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .flight-path-svg {
+        height: 120px;
+    }
+
+    .achievement-highlight-item .flight-path-svg {
+        height: 100px;
     }
 }
 
@@ -1205,6 +2105,19 @@ img {
 
     .section-container {
         padding: 0 0.5rem;
+    }
+
+    .section-header-with-image {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section-header-icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        align-self: center;
     }
 
     .hero-text-name {
